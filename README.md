@@ -45,7 +45,7 @@ AI-Mood-Analyzer/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/AI-Mood-Analyzer.git
+git clone https://github.com/hassaanak03/AI-Mood-Analyzer.git
 cd AI-Mood-Analyzer
 ```
 
