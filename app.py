@@ -7,6 +7,7 @@ Deployable on Hugging Face Spaces.
 """
 
 import os
+from dotenv import load_dotenv
 import json
 import re
 import requests
@@ -17,7 +18,8 @@ from datetime import datetime
 # ----------------------------
 # Configuration / Constants
 # ----------------------------
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 if not GROQ_API_KEY:
     raise EnvironmentError(
         "GROQ_API_KEY is not set. Please add it in Hugging Face Space Secrets."
